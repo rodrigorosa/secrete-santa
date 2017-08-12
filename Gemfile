@@ -40,6 +40,8 @@ gem 'materialize-sass'
 gem 'material_icons'
 gem 'redis'
 gem 'sidekiq'
+gem 'inky-rb', require: 'inky'
+gem 'premailer-rails'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
