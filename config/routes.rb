@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
-  mount Sidekiq::Web => '/sidekiq'
+
+  # maybe if Rails.env.development? ?
+  #mount Sidekiq::Web => '/sidekiq'
 
   resources :campaigns, except: [:new] do
     post 'raffle', on: :member
