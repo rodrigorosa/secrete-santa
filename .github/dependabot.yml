@@ -1,0 +1,38 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: listen
+    versions:
+    - 3.4.1
+    - 3.5.0
+  - dependency-name: rails
+    versions:
+    - 5.2.4.4
+    - 5.2.4.5
+  - dependency-name: rack-protection
+    versions:
+    - 2.1.0
+  - dependency-name: rake
+    versions:
+    - 13.0.3
+  - dependency-name: rails-html-sanitizer
+    versions:
+    - 1.3.0
+  - dependency-name: loofah
+    versions:
+    - 2.9.0
+  - dependency-name: nokogiri
+    versions:
+    - 1.11.1
+  - dependency-name: ffi
+    versions:
+    - 1.14.2
+  - dependency-name: rack
+    versions:
+    - 2.2.3
